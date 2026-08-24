@@ -1,0 +1,16 @@
+datasets:
+  tickets-eval:
+    id: tickets-eval
+    path: datasets/manifest.yaml
+    hash: sha256:e6ee3b340bcbef15c20880cf0de65b7c29b0881d900a26b34231eef9ad38de31
+    n: 120
+    slice_counts:
+      intent:account: 30
+      intent:order_status: 30
+      intent:other: 30
+      intent:refund: 30
+      lang:en: 37
+      lang:hi: 18
+      lang:hinglish: 65
+      len:long: 55
+      len:short: 65

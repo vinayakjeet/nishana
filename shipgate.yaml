@@ -1,0 +1,21 @@
+version: 1
+
+# ShipGate adoption config (docs/ADOPTING.md over there). The gate watches the
+# served adapter: a push that changes quality on the held-out tickets fails the
+# check before it reaches Tollgate's routing table.
+#
+# Thresholds are placeholders until run-to-run variance has been measured with
+# five identical runs. ShipGate's own README tells the story of why a guessed
+# threshold is worse than none: below the noise floor it fires constantly and
+# gets ignored. Measure first, then edit these two numbers.
+
+datasets:
+  - id: nishana-core
+    path: datasets/tickets-eval.jsonl
+    runner: judge
+    threshold_overall: 0.020
+    threshold_slice: 0.050
+
+target:
+  kind: http
+  url: ${{ env.NISHANA_SERVE_URL }}

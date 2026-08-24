@@ -1,0 +1,19 @@
+# Every scored run that the ablation table should include, one entry each.
+# `name` is how judge_quality.py refers to the run's side (--left-name /
+# --right-name must match). Add an entry after scripts/run_baseline.py writes
+# its predictions file, then rerun scripts/train_eval.py.
+#
+# Example of the shape once real runs exist:
+#
+# runs:
+#   - name: frontier-v2
+#     kind: frontier
+#     model: groq:llama-3.3-70b-versatile
+#     date: "2026-08-25"
+#     predictions: results/baseline/frontier-v2-groq-llama-3.3-70b-versatile-2026-08-25.jsonl
+#   - name: synthetic-only-500
+#     kind: adapter
+#     model: nishana/synthetic-only-500-Qwen2.5-7B-Instruct-r16
+#     date: "2026-08-26"
+#     predictions: results/ablation/synthetic-only-500-r16.jsonl
+runs: []

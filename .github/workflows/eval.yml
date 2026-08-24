@@ -1,0 +1,31 @@
+# Gates the served adapter through ShipGate. The job needs two secrets
+# (SHIPGATE_DB_URL, GEMINI_API_KEY) and one repository variable
+# (NISHANA_SERVE_URL, the deployed adapter endpoint). Until all three exist it
+# reports skipped rather than failing: a red check that means "not configured
+# yet" teaches people to ignore red checks.
+name: Eval
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  gate:
+    if: ${{ vars.NISHANA_SERVE_URL != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Gate through ShipGate
+        uses: vinayakjeet/shipgate/action@v1
+        with:
+          dataset: datasets/tickets-eval.jsonl
+          runner: judge
+        env:
+          SHIPGATE_DB_URL: ${{ secrets.SHIPGATE_DB_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

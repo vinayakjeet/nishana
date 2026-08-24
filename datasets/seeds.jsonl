@@ -1,0 +1,40 @@
+{"id": "seed-001", "text": "Bhai order OD-11209 ship hua ya nahi? Do din se status wahi hai.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-11209"}], "curated": true}
+{"id": "seed-002", "text": "Please confirm dispatch of my order OD-22318 placed on 2 Jun.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-22318"}, {"type": "date", "value": "2 Jun"}], "curated": true}
+{"id": "seed-003", "text": "ऑर्डर OD-33427 कब तक पहुँचेगा? कृपया सटीक तारीख बताएं।", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-33427"}], "curated": true}
+{"id": "seed-004", "text": "Tracking number OD-44536 ka koi update nahi mil raha jabse order kiya hai. Check karke batao.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-44536"}], "curated": true}
+{"id": "seed-005", "text": "My kettle from order OD-55645 has not left the warehouse even after payment confirmation on Monday.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-55645"}], "curated": true}
+{"id": "seed-006", "text": "Kya mera book set OD-66754 deliver ho chuka hai? Ghar pe koi nahi tha subah.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-66754"}], "curated": true}
+{"id": "seed-007", "text": "ऑर्डर OD-77863 में देरी क्यों हो रही है? यह तो एक्सप्रेस डिलीवरी थी।", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-77863"}], "curated": true}
+{"id": "seed-008", "text": "Order OD-88972 was supposed to reach Pune by 14 Mar but nothing yet.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-88972"}, {"type": "date", "value": "14 Mar"}], "curated": true}
+{"id": "seed-009", "text": "Dukaan band hone se pehle aa jayega na ye order OD-99081? Shop 8 baje band hoti hai.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-99081"}], "curated": true}
+{"id": "seed-010", "text": "Status of replacement OD-10193 for the damaged lampshade please.", "intent": "order_status", "entities": [{"type": "order_id", "value": "OD-10193"}, {"type": "product", "value": "lampshade"}], "curated": true}
+{"id": "seed-011", "text": "Refund do OD-21302 ka, tshirt shrunk after first wash.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-21302"}, {"type": "product", "value": "tshirt"}], "curated": true}
+{"id": "seed-012", "text": "Return pickup ho gaya 5 din pehle, ab Rs 1,340 ka refund pending hai order OD-32413 pe.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-32413"}, {"type": "amount", "value": "Rs 1,340"}], "curated": true}
+{"id": "seed-013", "text": "I cancelled the fridge cover order OD-43524 within an hour. Money never came back to source.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-43524"}], "curated": true}
+{"id": "seed-014", "text": "धनवापसी अभी तक नहीं मिली। ऑर्डर OD-54635 रद्द किया गया था और ₹1,200 कटे थे।", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-54635"}, {"type": "amount", "value": "₹1,200"}], "curated": true}
+{"id": "seed-015", "text": "Wrong item delivered twice for OD-65746. Enough, just refund my Rs 2,050.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-65746"}, {"type": "amount", "value": "Rs 2,050"}], "curated": true}
+{"id": "seed-016", "text": "Paisa kat gaya order fail hone ke baad bhi. OD-76857 ka amount turant reverse karo.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-76857"}], "curated": true}
+{"id": "seed-017", "text": "Refund of Rs 480 for order OD-87968 has been stuck in processing for three weeks now.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-87968"}, {"type": "amount", "value": "Rs 480"}], "curated": true}
+{"id": "seed-018", "text": "Mera cashback refund OD-98179 mein aana chahiye tha wallet pe, par kuch nahi aaya ab tak.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-98179"}], "curated": true}
+{"id": "seed-019", "text": "Product description ke against hai ye maal, return kar diya. OD-10280 ka full paisa chahiye including delivery charge.", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-10280"}], "curated": true}
+{"id": "seed-020", "text": "कृपया ऑर्डर OD-21391 की धनवापसी की प्रगति बताएं, सात दिन हो गए हैं।", "intent": "refund", "entities": [{"type": "order_id", "value": "OD-21391"}], "curated": true}
+{"id": "seed-021", "text": "OTP nahi aa raha login ka, number 9123456780 use kar raha hoon main.", "intent": "account", "entities": [{"type": "phone", "value": "9123456780"}], "curated": true}
+{"id": "seed-022", "text": "Account locked ho gaya galat password bahut baar daalne se. Unlock kaise karun?", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-023", "text": "I need to change my registered email since the old provider shut down last month.", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-024", "text": "मेरा अकाउंट हैक हो गया लगता है, पासवर्ड बदलना है और सभी डिवाइस से लॉगआउट करना है।", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-025", "text": "Address update karwani hai kyunki building ka naam badal gaya hai society redevelopment ke baad.", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-026", "text": "Two accounts ban gaye the galti se Google aur phone number dono se. Ek merge kar do please.", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-027", "text": "Password reset link expire ho jata hai turant, mail kholti hu tab tak invalid dikhta hai.", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-028", "text": "KYC verification pending dikha raha hai hafte bhar se, documents to pehle hi upload kar diye the.", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-029", "text": "Login history mein unknown device dikh raha hai Kolkata se. Security review karwao meri id ki.", "intent": "account", "entities": [], "curated": true}
+{"id": "seed-030", "text": "Mobile number change karna hai purana kho gaya sim ke saath, naya number 9966442288 hai.", "intent": "account", "entities": [{"type": "phone", "value": "9966442288"}], "curated": true}
+{"id": "seed-031", "text": "Coupon SAVE20 cart mein kaam nahi kar raha, expiry to valid likha hai March 2027 tak.", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-032", "text": "Do you offer gift wrapping during Diwali season for sarees?", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-033", "text": "Website pe live chat button hi nahi dikh raha desktop browser mein, chrome use karta hoon.", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-034", "text": "Bulk quotation chahiye hostel ke liye 60 mattresses ki, GST ke saath.", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-035", "text": "App notifications double aa rahe hain har message ka, annoying ho gaya hai ab.", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-036", "text": "क्या आप लैपटॉप पर छात्र छूट प्रदान करते हैं? कॉलेज आईडी पर कोई ऑफर बताइए।", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-037", "text": "Invoice mein HSN code missing hai, accountant ne wapas bheja hai correction ke liye.", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-038", "text": "Price drop hua tha agle din Rs 250 ka, price protection policy hai ya nahi aapki?", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-039", "text": "Search results mein out of stock items pehle dikhte hain, filter thoda better ho sakta hai.", "intent": "other", "entities": [], "curated": true}
+{"id": "seed-040", "text": "Store pickup option hai kya Indore mein? Online order karke khud le jaunga same day.", "intent": "other", "entities": [], "curated": true}

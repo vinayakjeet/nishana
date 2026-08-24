@@ -1,0 +1,36 @@
+# List prices consumed by nishana/cost/model.py. Every figure carries the date
+# it was checked; the cost table in the README regenerates from this file, so a
+# stale number is a one-line fix rather than prose archaeology.
+#
+# Free tiers are recorded as 0.0 with their real constraint named, because a
+# zero that hides a quota is how cost tables start lying.
+
+kaggle:
+  hourly_usd: 0.0
+  constraint: "2x T4, 30 GPU-hours per week, session wall-clock capped"
+  last_verified: "2026-08-24"
+
+modal:
+  # Per-second billing while a container is active; scale-to-zero otherwise.
+  t4:
+    per_second_usd: 0.000164
+    hourly_usd: 0.59
+  a10g:
+    per_second_usd: 0.000306
+    hourly_usd: 1.10
+  free_credits_usd: 30.0
+  cold_start_s: 25
+  last_verified: "2026-08-24"
+
+serving:
+  per_request_ms: 140
+  # Scale-to-zero means every quiet period longer than this pays a cold start.
+  assumed_idle_gap_s: 900
+
+frontier_api:
+  # Paid-list prices, used only for the break-even column. Day-to-day baseline
+  # runs go through free quotas tracked in QUOTAS.md.
+  gemini-flash-latest:
+    input_per_1m_usd: 0.30
+    output_per_1m_usd: 2.50
+    last_verified: "2026-08-24"

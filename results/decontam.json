@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-08-24T08:27:19+00:00",
+  "seeds_n": 40,
+  "checks": {
+    "5": {
+      "shared_ngrams": 0,
+      "items_with_overlap": 0,
+      "n_eval_items": 120,
+      "overlap_pct": 0.0,
+      "offenders": {}
+    },
+    "8": {
+      "shared_ngrams": 0,
+      "items_with_overlap": 0,
+      "n_eval_items": 120,
+      "overlap_pct": 0.0,
+      "offenders": {}
+    }
+  },
+  "removed_ids_note": "report only; nothing removed",
+  "applied": false
+}
